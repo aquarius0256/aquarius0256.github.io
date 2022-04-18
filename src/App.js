@@ -19,8 +19,8 @@ const App = () => {
                 {/*<MyPosts />*/}
                 <div className='app-wrapper-content'>
                     <Routes>
-                    <Route path="/Dialogues" element={<Dialogues/>}/>
-                    <Route path="/Profile" element={<Profile/>}/>
+                    <Route path="/dialogues" element={<Dialogues/>}/>
+                    <Route path="/profile" element={<Profile/>}/>
                     </Routes>
                 </div>
 
