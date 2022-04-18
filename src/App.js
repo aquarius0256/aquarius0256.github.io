@@ -6,20 +6,27 @@ import Navbar from './Components/Navbar/Navbar';
 // import MyPosts from './Components/Profile/MyPosts/MyPosts';
 import Profile from './Components/Profile/Profile';
 import Dialogues from "./Components/Dialogues/Dialogues";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 const App = () => {
 
     return (
-        <div className='app-wrapper'>
-            <Header/>
-            <Navbar/>
+        <BrowserRouter>
+            <div className='app-wrapper'>
+                <Header/>
+                <Navbar/>
 
-            {/*<MyPosts />*/}
-            <div className='app-wrapper-content'>
-                <Profile/>
+                {/*<MyPosts />*/}
+                <div className='app-wrapper-content'>
+                    <Routes>
+                    <Route path="/Dialogues" element={<Dialogues/>}/>
+                    <Route path="/Profile" element={<Profile/>}/>
+                    </Routes>
+                </div>
+
             </div>
-            {/*<Profile />*/}
-        </div>);
+
+        </BrowserRouter>);
 }
 
 
