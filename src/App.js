@@ -5,16 +5,21 @@ import Header from './Components/Header/Header';
 import Navbar from './Components/Navbar/Navbar';
 // import MyPosts from './Components/Profile/MyPosts/MyPosts';
 import Profile from './Components/Profile/Profile';
+import Dialogues from "./Components/Dialogues/Dialogues";
 
 const App = () => {
 
-  return (
-    <div className= 'app-wrapper'>
-     <Header />
-      <Navbar />
-        <Profile />
-      {/*<MyPosts />*/}
-    </div>);
+    return (
+        <div className='app-wrapper'>
+            <Header/>
+            <Navbar/>
+
+            {/*<MyPosts />*/}
+            <div className='app-wrapper-content'>
+                <Profile/>
+            </div>
+            {/*<Profile />*/}
+        </div>);
 }
 
 
