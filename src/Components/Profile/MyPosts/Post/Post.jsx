@@ -6,9 +6,9 @@ const Post = (props) => {
         <div className={s.item}>
             <img src='https://www.meme-arsenal.com/memes/807f7063ae47455ef78d5a0743509576.jpg' />
             {props.message}
-            {props.likesCount}
+
         </div>
-<span>like</span>
+<span> like {props.likesCount}</span>
     </div>
   
 
