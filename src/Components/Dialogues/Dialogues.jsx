@@ -4,7 +4,7 @@ import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
 
 
-
+const Dialogues = (props) => {
 
 let dialoguesData = [
     {id: 1, name: 'Artur'},
@@ -21,9 +21,9 @@ let messagesData = [
     {id: 3, message: 'How is your it-kamasutra bro?', likesCount: 14}
 ]
 
-let messagesElements = messagesData.map(message => <Message message={message.message} />)
+let messagesElements = messagesData.map(message => <Message m={props.messagesData} />)
 
-const Dialogues = (props) => {
+
     return <div className={s.dialogues}>
         <div className={s.dialoguesItems}>
             { dialoguesElement }

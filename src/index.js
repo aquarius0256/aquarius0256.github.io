@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import DialogItem from "./Components/Dialogues/DialogItem/DialogItem";
+import MyPosts from "./Components/Profile/MyPosts/MyPosts";
 
 // let dialoguesData = [
 //         {id: 1, name: 'Artur'},
@@ -17,12 +18,13 @@ import DialogItem from "./Components/Dialogues/DialogItem/DialogItem";
 //     {id: 3, message: 'How is your it-kamasutra bro?', likesCount: 14}
 // ]
 //
-// let postData = [
-//     {id: 1, message: 'How are you?', likesCount: 12},
-//     {id: 1, message: 'It\'s my first post', likesCount: 13},
-//     {id: 1, message: 'How are you?', likesCount: 12}
-// ]
 
+let spostData = [
+    {id: 1, message: 'How are you?', likesCount: 12},
+    {id: 1, message: 'It\'s my first post', likesCount: 13},
+    {id: 1, message: 'How are you?', likesCount: 12}
+]
+let spostElement = spostData.map(post => <App message={post.message} likesCount={post.likesCount}/>);
 ReactDOM.render(
   <React.StrictMode>
     <App />
