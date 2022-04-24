@@ -8,7 +8,7 @@ import Profile from './Components/Profile/Profile';
 import Dialogues from "./Components/Dialogues/Dialogues";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
-const App = () => {
+const App = (props) => {
 
     return (
         <BrowserRouter>
@@ -19,8 +19,8 @@ const App = () => {
                 {/*<MyPosts />*/}
                 <div className='app-wrapper-content'>
                     <Routes>
-                    <Route path="/dialogues/*" element={<Dialogues/>}/>
-                    <Route path="/profile" element={<Profile/>}/>
+                    <Route path="/dialogues/*" element={<Dialogues />}/>
+                    <Route path="/profile" element={<Profile />}/>
                     </Routes>
                 </div>
 
