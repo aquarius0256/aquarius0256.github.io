@@ -5,10 +5,18 @@
 }
 .dialoguesItems {
     padding: 10px;
+
 }
 .dialoguesItems .active {
     color: gold;
 }
+.dialog {
+    color: antiquewhite;
+}
 .messages {
     padding: 10px;
+
+}
+.messages .message {
+    color: antiquewhite;
 }
