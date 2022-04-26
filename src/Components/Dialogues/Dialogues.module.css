@@ -11,7 +11,7 @@
     color: gold;
 }
 .dialog {
-    color: antiquewhite;
+    color: black;
 }
 .messages {
     padding: 10px;
@@ -20,3 +20,4 @@
 .messages .message {
     color: antiquewhite;
 }
+

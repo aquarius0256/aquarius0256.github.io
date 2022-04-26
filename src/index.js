@@ -6,28 +6,28 @@ import reportWebVitals from './reportWebVitals';
 import DialogItem from "./Components/Dialogues/DialogItem/DialogItem";
 import MyPosts from "./Components/Profile/MyPosts/MyPosts";
 
-// let dialoguesData = [
-//         {id: 1, name: 'Artur'},
-//         {id: 2, name: 'Tanyuha'},
-//         {id: 3, name: 'Kamila'}
-//     ]
-//
-// let messagesData = [
-//     {id: 1, message: 'Hi'},
-//     {id: 2, message: 'How are you', likesCount: 13},
-//     {id: 3, message: 'How is your it-kamasutra bro?', likesCount: 14}
-// ]
-//
+let dialoguesData = [
+        {id: 1, name: 'Artur'},
+        {id: 2, name: 'Tanyuha'},
+        {id: 3, name: 'Kamila'}
+    ]
 
-let spostData = [
-    {id: 1, message: 'How are you?', likesCount: 12},
-    {id: 1, message: 'It\'s my first post', likesCount: 13},
-    {id: 1, message: 'How are you?', likesCount: 12}
+let messagesData = [
+    {id: 1, message: 'Hi'},
+    {id: 2, message: 'How are you', likesCount: 13},
+    {id: 3, message: 'How is your it-kamasutra bro?', likesCount: 14}
 ]
-let spostElement = spostData.map(post => <App message={post.message} likesCount={post.likesCount}/>);
+
+
+let postData = [
+    {id: 1, message: 'How are you?', likesCount: 100},
+    {id: 2, message: 'It\'s my first post', likesCount: 13},
+    {id: 3, message: 'How are you?', likesCount: 12}
+]
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App postData={postData} messagesData={messagesData} dialoguesData={dialoguesData}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
