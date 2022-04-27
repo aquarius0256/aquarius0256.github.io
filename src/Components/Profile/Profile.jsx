@@ -7,12 +7,12 @@ import DialogItem from "../Dialogues/DialogItem/DialogItem";
 
 const Profile = (props) => {
 
-
+debugger
     return <div>
 
         <ProfileInfo className={s.image} />
 
-        <MyPosts postData={props.postData}/>
+        <MyPosts postData={props.state.postData}/>
 
     </div>
 
