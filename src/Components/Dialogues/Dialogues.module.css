@@ -20,4 +20,25 @@
 .messages .message {
     color: antiquewhite;
 }
+.dialog img {
+    width: 20px;
+    height: 20px;
+}
+.message {
+    padding: 2px;
+}
+.oval {
+    /*position: relative;*/
 
+    width: 100px;
+    padding: 2px;
+    /*margin: 0 auto 10px;*/
+        /*text-align: center;*/
+
+    background: deepskyblue;
+
+    border-radius: 110px / 120px;
+}
+.oval2 {
+    /*margin: 0 0 0 10px;*/
+}

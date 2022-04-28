@@ -18,7 +18,13 @@ let state = {
             {id: 3, message: 'How are you?', likesCount: 12}
         ],
 
+    },
+    sitebar: {
+            friendsData: [
+                {id: 1, name: 'Artur'},
+                {id: 2, name: 'Tanyuha'},
+                {id: 3, name: 'Kamila'}
+            ]
     }
-
 }
 export default state;
