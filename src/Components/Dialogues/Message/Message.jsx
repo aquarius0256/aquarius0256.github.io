@@ -4,9 +4,11 @@ import s from './../Dialogues.module.css'
 
 const Message = (props) => {
 
-    return <div className={s.message + ' ' + s.oval}> {props.message} </div>
+    return <div className={s.message + ' ' + s.oval}> {props.message}
 
-    // <div className={s.message + ' ' + s.oval2}> dialog </div>
+    </div>
+
+
 }
 
 
