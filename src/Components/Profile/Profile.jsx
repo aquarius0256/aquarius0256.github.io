@@ -12,7 +12,10 @@ debugger
 
         <ProfileInfo className={s.image} />
 
-        <MyPosts postData={props.state.postData} addPost={props.addPost}/>
+        <MyPosts postData={props.profilePage.postData}
+                 newPostText={props.profilePage.newPostText}
+                 addPost={props.addPost}
+                 updateNewPostText={props.updateNewPostText}/>
 
     </div>
 

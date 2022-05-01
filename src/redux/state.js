@@ -1,7 +1,8 @@
-import {rerenderEntireTree} from "../render";
-
+let rerenderEntireTree = () => {
+    console.log('state changed');
+}
 let state = {
-    profilePage: {
+    dialoguesPage: {
         dialoguesData: [
             {id: 1, name: 'Artur'},
             {id: 2, name: 'Tanyuha'},
@@ -13,12 +14,13 @@ let state = {
             {id: 3, message: 'How is your it-kamasutra bro?', likesCount: 14}
         ]
     },
-    dialoguesPage: {
+   profilePage: {
         postData: [
             {id: 1, message: 'How are you?', likesCount: 100},
             {id: 2, message: 'It\'s my first post', likesCount: 13},
             {id: 3, message: 'How are you?', likesCount: 12}
         ],
+        newPostText: 'it-kamasutra-it'
 
     },
     sitebar: {
@@ -30,17 +32,32 @@ let state = {
     }
 
     }
-export let addPost = (postMessage) => {
+export const addPost = () => {
+
+    let newPost = {
+        id: 5,
+        message:  state.profilePage.newPostText,
+        likesCount: 0
+
+    };
+    state.profilePage.postData.push(newPost);
+    state.profilePage.newPostText = '';
+    rerenderEntireTree(state);
+};
+
+export const updateNewPostText = (newText) => {
 
     let newPost = {
         id: 5,
         message:  postMessage,
         likesCount: 0
     };
-    state.dialoguesPage.postData.push(newPost);
+    state.profilePage.newPostText = newText;
     rerenderEntireTree(state);
 };
 
-
+export const subscribe = (observer) => {
+rerenderEntireTree = observer; // наблюдатель pattern
+}
 
 export default state;
