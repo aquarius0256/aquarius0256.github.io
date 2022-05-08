@@ -14,8 +14,8 @@ debugger
 
         <MyPosts postData={props.profilePage.postData}
                  newPostText={props.profilePage.newPostText}
-                 addPost={props.addPost}
-                 updateNewPostText={props.updateNewPostText}/>
+                 dispatch={props.dispatch}
+                 />
 
     </div>
 
