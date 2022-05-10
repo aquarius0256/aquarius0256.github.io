@@ -22,7 +22,7 @@ const App = (props) => {
                         {/*<Route path="/dialogues/*" element={<Dialogues messagesData={props.state.profilePage.messagesData} dialoguesData={props.state.profilePage.dialoguesData} />}/>*/}
                         {/*<Route path="/profile" element={<Profile postData={props.state.dialoguesPage.postData}/>}/>*/}
 
-                        <Route path="/dialogues/*" element={<Dialogues state={props.state.dialoguesPage}/>}/>
+                        <Route path="/dialogues/*" element={<Dialogues store={props.store} />}/>
                         <Route path="/profile" element={<Profile profilePage={props.state.profilePage}
                                                                  dispatch={props.dispatch} />}/>
                     </Routes>
