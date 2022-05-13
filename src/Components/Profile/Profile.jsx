@@ -7,7 +7,7 @@ import DialogItem from "../Dialogues/DialogItem/DialogItem";
 
 const Profile = (props) => {
 
-debugger
+
     return <div>
 
         <ProfileInfo className={s.image} />

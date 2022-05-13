@@ -3,11 +3,11 @@ import s from './Navbar.module.css';
 import {NavLink} from "react-router-dom";
 import DialogItem from "../Dialogues/DialogItem/DialogItem";
 
-
+//
 const Navbar = (props) => {
-
+//
     let friendsElement = props.state.friendsData.map(friend => <DialogItem name={friend.name} id={friend.id}/>);
-
+//
     return <nav className={s.nav}>
         <div className={s.item}>
             <NavLink to="/profile" className={navData => navData.isActive ? s.activeLink : s.item}>Profile</NavLink>
